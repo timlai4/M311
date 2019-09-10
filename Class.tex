@@ -55,6 +55,66 @@ Compare to $(2,3,0) (-1,0,1)^T$ where these are now thought of as matrices and $
 	\item In the previous example, since the dot product was nonzero, we can conclusively say that the vectors were not orthogonal. 
 \end{itemize}
 \end{frame}
+\begin{frame}
+\frametitle{Cross Product}
+\framesubtitle{Problem 20}
+Computing unit vectors perpendicular to $j - k$ and $i + j$:
+\[
+	(j-k) \times (i + j) = i - j - k
+\]
+However, this vector is not a unit vector! We must normalize by dividing by the magnitude, in this case, $1/\sqrt{3}$. 
+\end{frame}
+\begin{frame}
+\frametitle{Cross Product}
+\framesubtitle{Problem 27}
+Finding the area of a parallelogram given the corner points. 
+\begin{enumerate}
+\item Plot the vectors and draw in the parallelogram
+\item Identify two vectors that determine the parallelogram
+\item Compute the magnitude of the cross product. 
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Cross Product}
+\framesubtitle{Problem 29}
+Finding a vector orthogonal to the plane given three points on the plane. 
+\begin{enumerate}
+\item The plane through $P,Q,R$ must contain the vectors formed by the points, such as $PQ$ and $PR$. 
+\item Find a vector orthogonal to both of these vectors with the corss product.
+\item This vector must then be orthogonal to the plane itself. 
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Lines and Planes}
+\framesubtitle{Problem 10}
+Find equation of line containing $P_0 = (2,1,0)$ and direction perpendicular to $i+J$ and $j + k$. 
+\begin{enumerate}
+\item Compute a vector orthogonal to both 
+\item Say the vector is $(a,b,c)$. Then the parametric equation is $x = 2 + at, y = 1 + bt, z = ct$. 
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Lines and Planes}
+\framesubtitle{Problem 17}
+Line segment from $r_0 = \langle 6,-1,9 \rangle$ to $r_1 = \langle 7,6,0 \rangle $:
+\begin{align*}
+r(t) &= (1-t)r_0 + tr_1 \\
+&= \langle 6, -1, 9 \rangle - t\langle 6, -1, 9 \rangle + t \langle 7, 6 , 0 \rangle \\
+&= (1-t)\langle 6, -1, 9 \rangle  + t \langle 7, 6, 0 \rangle \\
+&= \langle 6, -1, 9 \rangle + t \langle 1, 7, -9 \rangle
+\end{align*}
+\end{frame}
+\begin{frame}
+\frametitle{Lines and Planes}
+\framesubtitle{Parallel (Problem 20)}
+How do you determine whether two lines are parallel given their direction vectors? 
+\begin{enumerate}
+\item Say we have two lines with direction vectors $v_1$ and $v_2$. 
+\item Determine whether there exists a constant such that $v_1 = c v_2$. 
+\item If there is, then the two lines are parallel. If not, it may be possible that the lines intersect or are skew. 
+\end{enumerate}
 
+
+\end{frame}
 
 \end{document}
