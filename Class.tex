@@ -87,7 +87,7 @@ Finding a vector orthogonal to the plane given three points on the plane.
 \begin{frame}
 \frametitle{Lines and Planes}
 \framesubtitle{Problem 10}
-Find equation of line containing $P_0 = (2,1,0)$ and direction perpendicular to $i+J$ and $j + k$. 
+Find equation of line containing $P_0 = (2,1,0)$ and direction perpendicular to $i+j$ and $j + k$. 
 \begin{enumerate}
 \item Compute a vector orthogonal to both 
 \item Say the vector is $(a,b,c)$. Then the parametric equation is $x = 2 + at, y = 1 + bt, z = ct$. 
@@ -99,8 +99,8 @@ Find equation of line containing $P_0 = (2,1,0)$ and direction perpendicular to 
 Line segment from $r_0 = \langle 6,-1,9 \rangle$ to $r_1 = \langle 7,6,0 \rangle $:
 \begin{align*}
 r(t) &= (1-t)r_0 + tr_1 \\
-&= \langle 6, -1, 9 \rangle - t\langle 6, -1, 9 \rangle + t \langle 7, 6 , 0 \rangle \\
 &= (1-t)\langle 6, -1, 9 \rangle  + t \langle 7, 6, 0 \rangle \\
+&= \langle 6, -1, 9 \rangle - t\langle 6, -1, 9 \rangle + t \langle 7, 6 , 0 \rangle \\
 &= \langle 6, -1, 9 \rangle + t \langle 1, 7, -9 \rangle
 \end{align*}
 \end{frame}
@@ -116,5 +116,24 @@ How do you determine whether two lines are parallel given their direction vector
 
 
 \end{frame}
+\begin{frame}
+\frametitle{Lines and Planes}
+\framesubtitle{Finding equations of planes}
+\begin{itemize}
+	\item The equation of a plane depends heavily on the normal vector.
+	\item Main goal: find the normal vector
+	\item Our strategy to doing so involves taking two cross products of vectors.
+	\item Therefore, in all problems, get such vectors, either on the plane, parallel to the plane, etc.
+\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Vector Functions}
+\framesubtitle{Problems 12, 21, and 27}
+\begin{itemize}
+\item Note that both problems have one coordinate equal to $\cos t$ and another coordinate has $\sin t$. 
+\item Use $\sin^2 t + \cos ^2 t = 1$ 
+\item Incorporate the third coordinate
+\end{itemize}
+\end{frame}
 \end{document}
