@@ -136,4 +136,79 @@ How do you determine whether two lines are parallel given their direction vector
 \item Incorporate the third coordinate
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Exam 1}
+\framesubtitle{Remarks}
+\begin{itemize}
+\item Statistics on Exam 1
+\item The cumulative grades on Canvas are not correct. 
+\item As a result, if you want to know your current grade in the class, you'll need to compute it.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Partial Derivatives}
+\framesubtitle{Notation and setup}
+Suppose that $f: \mathbf{R}^n \to \mathbf{R}$. For example, say $f$ is a function of two variables $x,y$. Then we can talk about the (partial) derivatives wrt $x$ or $y$. 
+
+\begin{itemize}
+\item Partial derivative wrt $x$ is denoted as $f_x$
+\item It is defined as the change in $f$ when all other variables, which in this case is just $y$, is treated as a constant. 
+\item To compute it, we should think of all other variables as a constant then take the derivative as we would in single variable calculus. 
+
+\end{itemize}
+
+
+\end{frame}
+\begin{frame}
+\frametitle{Partial Derivatives}
+\framesubtitle{Preliminary example: 14.3.18}
+Given $f(x,y) = \sqrt{3x + 4y}$, compute all first order partials. 
+Solution: 
+\[
+f_x = (3x + 4y)^{1/2} _ x = \frac{1}{2} (3x + 4y)^{-1/2} \cdot (3x + 4y) _x = \frac{3}{2} (3x + 4y)^{-1/2}
+\]
+All the variables are being square rooted, so we first apply the Chain Rule, which then focuses the derivative on the variables themselves. Remember, in this case, $y$ is treated as a constant, so $4y$ is also a constant and therefore, zeros out. 
+\end{frame}
+\begin{frame}
+\frametitle{Partial Derivatives}
+\framesubtitle{14.3.20}
+Compute first order partials of $f(x,y) = x \sin (xy)$
+\[
+f_y = x (\sin (xy))_y = x \cos (xy) \cdot (xy)_y = x^2 \cos (xy) 
+\]
+In this case $x$ is treated as a constant, so we focus on the $\sin$ term and Chain Rule as before. 
+\[
+f_x = xy \cos (xy) + \sin (xy)
+\]
+Now, $x$ is a variable so it appears in both the first factor and also the $\sin$ term! This means we must use the Product Rule. 
+\end{frame}
+\begin{frame}
+\frametitle{Higher Order Derivatives}
+\framesubtitle{Setup}
+\begin{itemize}
+\item As in single variable calculus, we will have reason to take second and higher order partials (actually in this class, usually just second).
+\item The idea is the same as in one variable: we take one derivative at a time and keep track of each derivative. 
+\item The twist is that there are multiple variables.
+\item Notation: $f_{xy}$ means take the derivative wrt $x$ first and then take derivative wrt $y$. 
+\item Most of the time, $f_{xy} = f_{yx}$. 
+\item Start memorizing this formula now: $f_{xx} f_{yy} - f_{xy}^2$
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Higher Order Derivatives}
+\framesubtitle{14.3.62}
+Compute second mixed partials of 
+\[
+	f(x,y) = \log (x + 2y)
+\]
+We need both first order partials: $f_x = (x+2y)^{-1}$ and $f_y = 2(x+2y)^{-1}$. Now,
+\[
+	f_{xy} = \left((x+2y)^{-1}\right)_y = -\frac{(x+2y)_y}{(x+2y)^2} = - \frac{2}{(x+2y)^2}
+\]
+and
+\[
+	f_{yx} =\left( 2(x+2y)^{-1} \right) _x =  -\frac{2(x+2y)_x}{(x+2y)^2} = - \frac{2}{(x+2y)^2}
+\]
+\end{frame}
 \end{document}
