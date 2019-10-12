@@ -151,12 +151,11 @@ How do you determine whether two lines are parallel given their direction vector
 \frametitle{Applications}
 \framesubtitle{Mass-to-charge ratio}
 \begin{itemize}
-\item Mass spectrometry (MS) measures the m/z ratio of ions presented as a plot of intensity against m/z. 
-\item Useful for understanding physiochemical properties in proteomics related to diseases such as cardiovascular, diabetes, and cancer. 
-\item What is mass to charge ratio and why is it important?
+\item Mass to charge ratio is a quantity in electrodynamics with wide applications
 \item Upshot: Ions' motions are completely determined by the ratio and the electromagnetic forces
-\item Lorentz Law: $F = Q(E + v \times B)$ combined with Newton's Law $F = ma$ gives $(m/Q)a = E + v \times B$
-\item $Q$ is the charge of the ion, $v$ the velocity, $E,B$ are the electric and magnetic fields resp.
+\item $F = q(E + v \times B)$ the force on an ion in electromagnetic fields
+\item Combined with Newton's Law $F = ma$ gives $(m/q)a = E + v \times B$
+\item $q$ is the charge of the ion, $v$ the velocity, $E,B$ are the electric and magnetic fields resp.
 \end{itemize}
 \end{frame}
 \begin{frame}
@@ -223,5 +222,27 @@ and
 \[
 	f_{yx} =\left( 2(x+2y)^{-1} \right) _x =  -\frac{2(x+2y)_x}{(x+2y)^2} = - \frac{2}{(x+2y)^2}
 \]
+\end{frame}
+\begin{frame}
+\frametitle{Gradient}
+\framesubtitle{Definition}
+\begin{itemize}
+\item Derivative of one variable function gives numbers corresponding to slopes of tangent lines.
+\item Gradient generalizes this idea.
+\item $\nabla f$ is a vector whose components are the partial derivatives
+\item It gives the direction and magnitude of the fastest increase of the function.
+\item Note: the gradient is the one-dimensional (but still vector) version of the Jacobian. 
+\item Gradient satisfies all the properties of a derivative: linearity, product and chain rule
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Gradients}
+\framesubtitle{Related concepts}
+\begin{itemize}
+\item Equivalent definition of gradient: given any vector $v$, it is the unique vector field such that $D_v f = \nabla f \cdot v$
+\item $f(x) = f(a) + \nabla f (a) (x - a) + O(x^2)$
+\item The gradient is orthogonal to the level sets. 
+\item Appears in formulations of Maxwell's equations (Laws of Electrodynamics)
+\end{itemize}
 \end{frame}
 \end{document}
