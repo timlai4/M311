@@ -245,4 +245,43 @@ and
 \item Appears in formulations of Maxwell's equations (Laws of Electrodynamics)
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Vector Fields}
+\framesubtitle{Definition and Examples}
+Vector field is an assignment of a vector to each point in space. Contrast with functions we've been studying, which could be considered scalar fields, where for each point in space, we assign a scalar instead of a vector. \\
+Examples:
+\begin{itemize}
+\item A weather chart displaying the strength and direction of winds superimposed on a map. 
+\item Maxwell's equations tell us the force as a vector experienced by an ion at any point. This gives a vector field which is the electromagnetic field. 
+\item Gravitational fields caused by celestial objects: each point gives the gravitational force as a vector. A spherical object would have all vectors pointing towards center. 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Conservative Fields}
+\framesubtitle{Application of gradient}
+\begin{itemize}
+\item Can construct vector fields from our functions using $\nabla f$
+\item This would then be a vector field where each point gives the tangent vector to $f$. 
+\item Such vector fields are extremely important and called "conservative". 
+\item The work done in a conservative force field depends only on the start and end points. 
+\item Conservative fields are irrotational (zero curl). 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Conservative Fields}
+\framesubtitle{Example}
+Draw the gradient field of $f(x,y) = x^2 + y^2$ superimposed on its contour graph. 
+\end{frame}
+\begin{frame}
+\frametitle{Gradient Optimization}
+\framesubtitle{Application of gradient}
+\begin{itemize}
+\item Recall that gradient points in direction of maximal increase. 
+\item We can use this idea to iteratively find local min/max. 
+\item Why use iterative methods at all? Why not set derivatives equal to zero and find all critical points right away!
+\item This can be inefficient or not computationally feasible in the presence of large datasets
+\item We may not always have explicit equations for our optimization problem but can computationally and locally get the gradients. 
+\end{itemize}
+\end{frame}
 \end{document}
