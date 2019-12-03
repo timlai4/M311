@@ -284,4 +284,73 @@ Draw the gradient field of $f(x,y) = x^2 + y^2$ superimposed on its contour grap
 \item We may not always have explicit equations for our optimization problem but can computationally and locally get the gradients. 
 \end{itemize}
 \end{frame}
+\begin{frame}
+\frametitle{Multiple Integrals}
+\framesubtitle{Setup}
+\begin{itemize}
+\item In one dimension (one integral), we have length. We can multiply this length by number(s) to get area, but this is effectively increasing the dimension by adding a second integral. 
+\item Two integrals give area. Three gives volume, etc. 
+\item Similarly, we can compute volume with two integrals with an integrand other than $1$. 
+\item Area can be thought of as a special case of volume. 
+\item For example, a square has area $x^2$ while a rectangular box with a square base has volume $x^2 h$. However, if you let the latter have height $1$, which incidentally, is the integrand in these computations, then you recover $x^2$. 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Triple Integrals}
+\framesubtitle{General strategy}
+\begin{itemize}
+\item The hardest part about triple integrals is determining the limits of the integrals. 
+\item For this discussion, we stick with Cartesian coordinates. 
+\item In which order should we integrate?
+\item If you pick $z$ first, can you easily parameterize the other variables in terms of $z$? 
+\item For example, if the shape is sitting on the $xy$- plane and its height is determined completely by $z = f(x,y)$ then great! Notice I've basically cheated here. 
+\item A negative example could be a pyramid sitting on the $xy$-plane: its height could be bounded by multiple planes so trying to parameterize in terms of $z$ would require you to partition. 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Triple Integrals}
+\framesubtitle{Setting up limits}
+\begin{itemize}
+\item At this step, we've determined which variable goes inside our innermost integral, say $z$. 
+\item For the next two variables, we project onto the appropriate plane, in this case, $xy$-plane. 
+\item At this point, it becomes a double integral problem. 
+\item Set up the double integral as you would have last week. 
+\item Wrap this double integral outside the innermost integral from the first step. 
+
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Multiple Integrals}
+\framesubtitle{Change of variables}
+\begin{itemize}
+\item When performing a change of variables, there are several components to consider.
+\item First, you should obviously decide what your change of variables will be. 
+\item Afterwards, you must determine what the new limits are. 
+\item Because we have multiple integrals, we cannot take antiderivatives and undo the substitution at the end. 
+\item Remember when we did $u$-subs in single variable, we needed a $du$. 
+\item The analogue of that in multiple variables is the Jacobian. 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Jacobian}
+\framesubtitle{Changing to polar coordinates}
+\[
+\iint dx dy = \iint r \, \ dr d\theta
+\]
+We convert to polar coordinates from Cartesian using $x = r \cos \theta$ and $y = r \sin \theta$. Then, $dx dy = |J| \, \ dr d\theta$ where
+\[
+J = \begin{pmatrix}
+x_r & x_\theta \\
+y_r & y_\theta
+\end{pmatrix}
+= \begin{pmatrix}
+\cos \theta & -r \sin \theta \\
+\sin \theta & r \cos \theta
+\end{pmatrix}
+\]
+and so
+\[
+\det J = r \cos^2 \theta + r \sin^2 \theta = r
+\]
+\end{frame}
 \end{document}
