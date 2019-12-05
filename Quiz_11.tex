@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{makeidx}
+\usepackage{hyperref}
 
 
 \newcommand{\R}{\mathbf{R}}
@@ -18,7 +19,7 @@
 \runningfooter{}{}{}
 
 \begin{document}
-
+\printanswers
 \begin{questions}
 \question Show that 
 \[
@@ -31,6 +32,12 @@ where $C$ is a cylinder with radius $R$ and height $h$.
 \part[5] Set up the double integral to compute the area of this projection. 
 \part[5] Now, let's add in the height of the cylinder. The innermost integral is $\int_0^h 1 \, \ dz$. Wrap this into the double integral you got from the previous part and compute the iterated triple integral to attain $\pi R^2 h$. 
 \end{parts}
+\begin{solution}
+Orient the cylinder so that its projection to the $xy$-plane is the unit circle centered at the origin, described by $r = R$. Then, 
+\[
+V = \int _0 ^{2\pi} \int_0^R \int_0^h r \, \ dz dr d \theta =  \int _0 ^{2\pi} \int_0^R h \, \ dr d \theta =  \frac{R^2 h}{2} \int _0 ^{2\pi} 1 \, \ d \theta = \pi R^2 h
+\]
+\end{solution}
 
 
 \question[30] Show that 
@@ -44,11 +51,9 @@ To begin, square both sides. On the LHS, we get:
 I^2 =  \int_{-\infty}^{\infty} e^{-x^2} \, \ dx  \int_{-\infty}^{\infty} e^{-y^2} \, \ dy =  \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} e^{-(x^2 + y^2)} \, \ dx dy 
 \]
 Now, compute this double integral and you should get $\pi$. Conclude that $I = \sqrt{\pi}$. Why is it not equal to $- \sqrt{\pi}$?
-
-\question[10] Compute 
-\[
-\int_0^1 \int_y^1 e^{-x^2} \, dx dy
-\]
+\begin{solution}
+\url{https://en.wikipedia.org/wiki/Gaussian_integral#By_polar_coordinates}
+\end{solution}
 
 \end{questions}
 \end{document}
