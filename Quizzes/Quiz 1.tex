@@ -1,0 +1,46 @@
+\documentclass[addpoints]{exam}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{makeidx}
+
+\newcommand{\R}{\mathbf{R}}
+\newcommand{\Z}{\mathbf{Z}}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{Math M311}{Quiz 1}{September 3, 2019}
+\runningheader{Math M311}
+{Quiz 1, Page \thepage\ of \numpages}
+{September 3, 2019}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+\begin{document}
+\printanswers
+\begin{questions}
+\question[20]  Let $u = \langle 1,2,3 \rangle$ and $v = \langle -1, 0, 3 \rangle$ be two defined vectors. 
+Compute $|2u - 3v|$. 
+\begin{solution}
+\[
+2u - 3v = 2(1,2,3) - 3(-1,0,3) = (2,4,6) + (3, 0, -9) = (5,4,-3)
+\]
+so
+\[
+|2u - 3v| = |(5,4,-3)| = \sqrt{5^2 + 4^2 + (-3)^2} = \sqrt{45}
+\]
+\end{solution}
+\question[20] Find the distance from $(2,-1,3)$ to the $yz$-plane. 
+\begin{solution}
+The closest point is $(0,-1,3)$, which has a distance of $2$. 
+\end{solution}
+\question[20] Write the equation of a sphere with center $(2,-1,3)$ and radius $5$. 
+\begin{solution}
+\[
+(x-2)^2 + (y+1)^2 + (z-3)^2 = 25
+\]
+\end{solution}
+
+
+\end{questions}
+\end{document}
